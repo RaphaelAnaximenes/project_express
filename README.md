@@ -31,5 +31,3 @@ Após iniciar o servidor, você poderá visualizar o projeto em seu navegador ac
 
 ## Agradecimento
 Agradecemos por acessar este repositório e explorar nosso projeto. Esperamos que você desfrute da experiência e encontre inspiração para suas próprias criações. Se tiver alguma dúvida ou feedback, sinta-se à vontade para entrar em contato. Obrigado por seu interesse e apoio!
-
-Equipe de Desenvolvimento
