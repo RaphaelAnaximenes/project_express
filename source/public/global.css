@@ -1,0 +1,80 @@
+@keyframes typeAnimation {
+    0% {
+        width: 0;
+        opacity: 0;
+        transform: translateX(-10px); /* Adiciona um pequeno deslocamento inicial */
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes eraseAnimation {
+    0% {
+        width: 100%;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        width: 0;
+        opacity: 0;
+        transform: translateX(10px); /* Adiciona um pequeno deslocamento final */
+    }
+}
+
+#hello {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block; /* Garante que a largura da animação se ajusta ao conteúdo */
+    animation: typeAnimation 3s steps(30, end) infinite, eraseAnimation 3s steps(30, end) 6s infinite;
+}
+
+
+.tooltip-inner {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.25rem;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^="top"],
+.tooltip.bs-tooltip-top {
+    margin-top: -3px;
+}
+
+.colored-span {
+    color: rgb(255, 0, 0);
+}
+
+.icon-link {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon-link:hover img {
+    border-color: #000; /* Change to the desired hover border color */
+}
+
+.icon-link:hover {
+    transform: translateY(-5px) scale(1.05); /* Adjust the value as needed for the floating effect */
+}
+
+.card-image{
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1280px) {
+     .card-image {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .card-image {
+        max-width: 70%;
+    }
+}
